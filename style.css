@@ -1,0 +1,46 @@
+html {
+    background-color: blueviolet;
+}
+
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: bisque;
+    display: grid;
+    grid-template-areas: "header header"
+                         "body body"
+                         "footer footer";
+}
+
+.header {
+    grid-area: header;
+    justify-content: center;
+}
+
+.body {
+    display: grid;
+    grid-area: body;
+    grid-template-areas: "one two";
+    height: 1000px;
+    
+}
+
+.footer {
+    grid-area: footer;
+}
+
+div {
+    border: 1px solid green;
+}
+
+#one {
+    grid-area: one;
+    align-content: center;
+    background-color: brown;
+
+}
+
+#two {
+    grid-area: two;
+    justify-items: center;
+}
